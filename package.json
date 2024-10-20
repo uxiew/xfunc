@@ -1,0 +1,47 @@
+{
+  "name": "xfunc",
+  "version": "0.0.1",
+  "module": "index.ts",
+  "author": {
+    "name": "ChandlerVer5",
+    "url": "https://github.com/uxiew"
+  },
+  "repository": {
+    "url": "https://github.com/uxiew/xfunc"
+  },
+  "keywords": [
+    "utils",
+    "helper-functions",
+    "ts-utils"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "type": "module",
+  "types": "dist/index.d.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./money": {
+      "types": "./dist/money.d.mts",
+      "default": "./dist/money.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'run tests'",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
