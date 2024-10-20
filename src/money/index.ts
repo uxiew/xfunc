@@ -23,7 +23,7 @@
 * @param money
 * @returns 大写的中文金额💰
 */
-export function amountToChinese(money: string | number) {
+export function capitalizeRMB(money: string | number) {
   // 汉字的数字
   const cnNums = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖',]
   // 基本单位
